@@ -1,2 +1,2 @@
 # flutter_first
-Flutter project 
+Flutter project details
