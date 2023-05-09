@@ -8,7 +8,7 @@ workflows:
       groups:
         - google_play
       vars:
-        PACKAGE_NAME: "io.codemagic.fluttersample"
+        PACKAGE_NAME: "code.example.flutter_first"
         GOOGLE_PLAY_TRACK: alpha
       flutter: stable
     scripts:
