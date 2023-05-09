@@ -18,9 +18,12 @@ class MyDetailPage extends StatelessWidget {
           child: Column(
             children: [
               Center(
-                child: CircleAvatar(
-                  maxRadius: 60,
-                  backgroundImage: NetworkImage(userModel.avatar),
+                child: Hero(
+                  tag: "background${userModel.id}",
+                  child: CircleAvatar(
+                    maxRadius: 60,
+                    backgroundImage: NetworkImage(userModel.avatar),
+                  ),
                 ),
               ),
               const SizedBox(

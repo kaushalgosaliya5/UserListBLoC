@@ -46,22 +46,25 @@ class MyHomeApp extends StatelessWidget {
                               builder: (builder) =>
                                   MyDetailPage(userModel: state.users[index])));
                         },
-                        child: Card(
-                          color: Colors.blue,
-                          elevation: 4,
-                          margin: const EdgeInsets.all(10),
-                          child: ListTile(
-                            title: Text(
-                              userList[index].firstName,
-                              style: const TextStyle(color: Colors.white),
-                            ),
-                            subtitle: Text(
-                              userList[index].lastName,
-                              style: const TextStyle(color: Colors.white),
-                            ),
-                            trailing: CircleAvatar(
-                              backgroundImage:
-                                  NetworkImage(userList[index].avatar),
+                        child: Hero(
+                          tag: "background${state.users[index].id}",
+                          child: Card(
+                            color: Colors.blue,
+                            elevation: 4,
+                            margin: const EdgeInsets.all(10),
+                            child: ListTile(
+                              title: Text(
+                                userList[index].firstName,
+                                style: const TextStyle(color: Colors.white),
+                              ),
+                              subtitle: Text(
+                                userList[index].lastName,
+                                style: const TextStyle(color: Colors.white),
+                              ),
+                              trailing: CircleAvatar(
+                                backgroundImage:
+                                    NetworkImage(userList[index].avatar),
+                              ),
                             ),
                           ),
                         ),
