@@ -6,7 +6,7 @@ workflows:
       groups:
         - google_play
       vars:
-        PACKAGE_NAME: "code.example.flutter_first"
+        PACKAGE_NAME: "com.example.flutter_first"
         GOOGLE_PLAY_TRACK: alpha
       flutter: stable
     scripts:
