@@ -38,12 +38,8 @@ workflows:
     publishing:
       email:
         recipients:
-          - user_1@example.com
-          - user_2@example.com
+          - kaushalgosaliya5@gmail.com
+          - kaushalgosaliya1995@gmail.com
         notify:
           success: true
           failure: false
-      google_play:
-        credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
-        track: $GOOGLE_PLAY_TRACK
-        submit_as_draft: true
