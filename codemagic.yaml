@@ -3,8 +3,6 @@ workflows:
     name: Android Workflow
     max_build_duration: 120
     environment:
-      android_signing:
-        - keystore_reference
       groups:
         - google_play
       vars:
