@@ -28,14 +28,12 @@ class MyHomeApp extends StatelessWidget {
           body: BlocBuilder<UserBloc, UserState>(
             builder: (context, state) {
               if (state is UserLoadingState) {
-                print("UserLoadingState");
                 return const Center(
                   child: CircularProgressIndicator(),
                 );
               }
 
               if (state is UserLoadedState) {
-                print("UserLoadedState");
                 List<UserModel> userList = state.users;
                 return ListView.builder(
                     itemCount: userList.length,

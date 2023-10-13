@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_first/model/user_model.dart';
 
 class MyDetailPage extends StatelessWidget {
-  MyDetailPage({Key? key, required this.userModel}) : super(key: key);
+  const MyDetailPage({Key? key, required this.userModel}) : super(key: key);
   final UserModel userModel;
 
   @override
